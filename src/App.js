@@ -7,7 +7,9 @@ function App() {
     {name: "Learn React"},
     {name: "Climb Mt. Everest"},
     {name: "Run a marathon"},
-    {name: "Feed the dogs"}
+    {name: "Feed the dogs"},
+    {name: "Wash the dishes"},
+    {name: "Play Xbox"}
   ]
 
   return (
@@ -16,8 +18,11 @@ function App() {
       <h2>Things I have to do:</h2>
       <ul>
         {toDoList.map(todo => {
-          return <li>{todo.name}</li>
+          return <li><h1>{todo.name}</h1> <button>
+          do it!
+        </button></li>
         })}
+        
       </ul>
     </div>
   );
